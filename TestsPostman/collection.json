@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "f13ea4dc-b47e-4003-bbe8-7efe252768b6",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TestsPostman",
+			"item": [
+				{
+					"name": "calculerMargeProduit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/AdminProduits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"AdminProduits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TriProduits",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/TriProduits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"TriProduits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"id\": 4,\n      \"nom\": \"Table de Ping Pong King\",\n      \"prix\": 0,\n      \"prixAchat\": 400\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Produits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Produits"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
