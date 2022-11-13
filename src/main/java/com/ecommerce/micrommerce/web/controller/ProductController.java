@@ -49,6 +49,10 @@ public class ProductController {
         });
         return returnedObject;
     }
+    @GetMapping("/TriProduits")
+    public List<Product> trierProduitsParOrdreAlphabetique() {
+        return productDao.findAllByOrderByNom();
+    }
 
     @ApiOperation(value = "Récupère un produit grâce à son ID à condition que celui-ci soit en stock!")
     @GetMapping(value = "/Produits/{id}")
